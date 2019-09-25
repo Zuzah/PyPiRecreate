@@ -1,0 +1,8 @@
+
+The following are required as part of development of this app:
+
+-r requirements.txt (everything listed in this txt file)
+
+pytest
+pytest-cov
+webtest

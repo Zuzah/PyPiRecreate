@@ -1,0 +1,5 @@
+The following are required to run this app:
+
+flask
+sqlalchemy
+passlib
