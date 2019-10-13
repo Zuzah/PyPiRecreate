@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <title> Python Package Index </title>
-        </head>
-            <body>
-                <h1>Python Package Index</h1>
+{% extends '_layout.html' %}
+{% block main_content %}
 
-             
-                    <h2> Packages</h2>
-                    {% for i in packages %}
-                        <span class="title">
-                            
-                                {{ i.name }}
-                        
-                        </span>
+                        <h1>Python Package Index</h1>
 
-                        <span class="version">
-                            {{ i.version }}
+                    
+                            <h2> Packages</h2>
+                            {% for i in packages %}
+                                <div>
+                                    <span class="title">
+                                        
+                                            {{ i.name }}
+                                    
+                                    </span>
 
-                        </span>
-                        <br>
-                {% endfor %}
-            </body>
-    </html>
+                                    <span class="version">
+                                        {{ i.version }}
+
+                                    </span>
+                                </div>
+                        {% endfor %}
+                
+{% endblock main_content %}

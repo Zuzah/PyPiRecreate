@@ -1,0 +1,16 @@
+.title {
+    font-weight: bold;
+    color: black;
+}
+
+.main_content {
+    padding: 20px;
+    background-color: white;
+}
+
+nav {
+    background-color: #000;
+    padding-top: 15px;
+    font-size: 24px;
+    
+}
