@@ -1,0 +1,23 @@
+{% extends '/shared/_layout.html' %}
+{% block main_content %}
+
+                        <h1>Python Package Index</h1>
+
+                    
+                            <h2> Packages</h2>
+                            {% for i in packages %}
+                                <div>
+                                    <span class="title">
+                                        
+                                            {{ i.name }}
+                                    
+                                    </span>
+
+                                    <span class="version">
+                                        {{ i.version }}
+
+                                    </span>
+                                </div>
+                        {% endfor %}
+                
+{% endblock main_content %}
