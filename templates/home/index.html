@@ -1,23 +1,45 @@
 {% extends '/shared/_layout.html' %}
 {% block main_content %}
 
-                        <h1>Python Package Index</h1>
+    <div class="hero">
+        <div class="hero-inner">
+            <h1>Find, install and publish Python packages with the Python Package Index</h1>
+            <input type="text" placeholder="Search Projects" class="form-control"> 
+        </div>
+        
+        Or <a href="#"> browse projects</a>
+        
+        
+    </div>
 
-                    
-                            <h2> Packages</h2>
-                            {% for i in packages %}
-                                <div>
-                                    <span class="title">
-                                        
-                                            {{ i.name }}
-                                    
-                                    </span>
+    <div class="pypi-stats">
+        <div class="stat">-1 projects</div>
+        <div class="stat">-1 releases</div>
+        <div class="stat">-1 users</div>
+    </div>
 
-                                    <span class="version">
-                                        {{ i.version }}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h2>New Releases</h2>
 
-                                    </span>
-                                </div>
-                        {% endfor %}
+                <div>Hot off the press: the newest project releases</div>
+
+                {% for p in packages %}
+                <div class="project">
+                    <div class="title">
+                        <a href="#">{{p.name}} {{p.version}} </a></div>
+                     <div class="desc"> {{p.descer}} </div>
+                </div>
+                {% endfor %}
                 
+            </div>
+            <div class="col-md-3"></div>
+            
+        </div>
+    </div>
+    
+    
+    
 {% endblock main_content %}
