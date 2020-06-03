@@ -6,31 +6,8 @@ body {
     font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
 }
 
-.title {
-    font-weight: bold;
-    color: black;
-}
-
 .main_content {
     background-color: white;
-}
-
-nav {
-    background-color: #0073b7;
-    padding-top: 15px;
-    font-size: 24px;
-    color: white;
-    height: 65px;
-    border-bottom: 2px;
-    border-bottom-color: white;
-    border-bottom-style: solid;
-
-    
-}
-
-nav > a {
-    color: white;
-    margin-right: 10px;
 }
 
 .hero {
@@ -68,6 +45,7 @@ nav > a {
     text-align: center;
     border-bottom: 1px solid #d3d3d3;
     border-top: 1px solid #d3d3d3;
+    margin-bottom: 30px;
 }
 
 .pypi-stats .stat {
@@ -76,4 +54,40 @@ nav > a {
     padding: 10px;
     font-size: 16px;
     color: #003d61;
+}
+
+.project-list .subtitle {
+    font-style: italic;
+
+}
+
+.project-list h2 {
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-list .project {
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    background-color: #ececec;
+    min-height: 45px;
+    margin-top: 15px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.project-list .project .title {
+    font-size: 20px;
+}
+
+.project-list .project .a {
+    color: #006dad;
+}
+
+
+.project-list .project .desc {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
 }

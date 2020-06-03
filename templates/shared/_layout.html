@@ -5,17 +5,34 @@
             <title> Python Package Index </title>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
             <link rel="stylesheet" href="/static/css/site.css" />
+            <link rel="stylesheet" href="/static/css/nav.css" />
             <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> 
             {% block additional_css %}
             {% endblock additional_css %}
         </head>
             <body>
+                    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse navbar-expand-md">
+                        <a class="navbar-brand" href="/"><img src="/static/img/pypi-logo.svg"/></a>
 
-                
-                <nav>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                </nav>
+                        <button class="navbar-toggler navbar-toggle" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="navbar-toggler-icon">
+                                <div class="nav-expand-line"></div>
+                                <div class="nav-expand-line"></div>
+                                <div class="nav-expand-line"></div>
+                            </div>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/account/login">Login</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/account/register" id="last_nav_link">Register</a></li>
+                            </ul>
+                        </div>
+                    </nav>
                     <div class="main_content">
                         
                         {% block main_content %}
